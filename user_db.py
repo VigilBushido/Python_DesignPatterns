@@ -38,6 +38,7 @@ def find_user(email: str):
 def main():
     create_user("Serigo Munguia", "epicPassword", "smunguia@yahoo.com")
     print(find_user("smunguia@yahoo.com"))
+    print(find_user("wrongEmail@yahoo.com"))
     
 if __name__ == "__main__":
     main()
