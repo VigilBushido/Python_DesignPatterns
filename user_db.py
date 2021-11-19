@@ -36,9 +36,15 @@ def find_user(email: str):
         raise Exception(f"User with email address {email} not found.")
         
 def main():
-    create_user("Serigo Munguia", "epicPassword", "smunguia@yahoo.com")
+    #set reset
+    
+    
+    sergio_inst = create_user("Serigo Munguia", "epicPassword", "smunguia@yahoo.com")
     print(find_user("smunguia@yahoo.com"))
-    print(find_user("wrongEmail@yahoo.com"))
+    #print(find_user("wrongEmail@yahoo.com"))
+    
+    User.reset_password(sergio_inst, '', "worstPasswordEver")
+    print(sergio_inst)
     
 if __name__ == "__main__":
     main()
