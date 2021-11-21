@@ -23,8 +23,8 @@ class SpanishDeck:
         return self._cards[position]
     
 def main():
-    beer_card = Card('7', 'diamonds')
-    print(beer_card)
+    soda_card = Card('7', 'diamonds')
+    print(soda_card)
     
 if __name__ == "__main__":
     main()
