@@ -20,5 +20,17 @@ def main():
     print(username_mapping["John"]) # pulls up his whole directory of information
     print(type(username_mapping["John"])) #returns a tuple
     
+    # -- Can be useful to log in for example --
+
+    username_input = input("Enter your username: ")
+    password_input = input("Enter your password: ")
+    
+    _, username, password = username_mapping[username_input]
+    
+    if password_input == password:
+        print("Your details are correct!")
+    else:
+        print("Your details are incorrect.")
+    
 if __name__=='__main__':
     main()
