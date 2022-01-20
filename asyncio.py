@@ -28,9 +28,11 @@ async def get_delay(seconds):
 async def main():
     await asyncio.gather(get_delay(5),count())
   
-    
+# asyncio.run(main())
+   
 try:
     loop = asyncio.get_running_loop()
+    print(loop)
 except RuntimeError:  # if cleanup: 'RuntimeError: There is no current event loop..'
     loop = None
 

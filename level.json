@@ -1,0 +1,16 @@
+{
+ "characters": [
+  {
+      "type": "wizard",
+      "name": "VigilBushido"
+  },
+  {
+      "type": "witcher",
+      "name": "Jackie"
+  },
+  {
+      "type": "sorcerer",
+      "name": "El Mundo"
+  } 
+ ]
+}
